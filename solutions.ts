@@ -1,6 +1,6 @@
-//1: 
+ 
 function multiplyValue(value: number, multiplier?: number): number {
-  const actualMultiplier: number = multiplier ?? 2;
+  const actualMultiplier: number = multiplier ? 2 : 1;
 
   return value * actualMultiplier;
 }
@@ -27,8 +27,7 @@ function processInput(input: string | number | boolean): string | number {
 //console.log(processInput(false));
 
 function formatCoordinate(
-  coordinate: readonly [number, number, string]
-): string {
+  coordinate: readonly [number, number, string]): string {
   const [latitude, longitude, locationName] = coordinate;
 
   return `Location: ${locationName} (${latitude}, ${longitude})`;
@@ -38,7 +37,7 @@ function formatCoordinate(
 
 //console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
 
-function concatenateArrays<T>(...arrays: T[][]): T[] {
+function concatenateArrays <T> (...arrays: T[][]): T[] {
   const combinedArray: T[] = [];
 
   for (const currentArray of arrays) {

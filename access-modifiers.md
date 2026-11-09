@@ -12,7 +12,7 @@ Introduction
 
 for example:
 
-## class Student {
+##class Student {
   public name: string;
 
   constructor(name: string) {
@@ -28,7 +28,7 @@ console.log(student.name);
 
 for example:
 
-## class BankAccount {
+##class BankAccount {
   private balance: number = 1000;
 
   getBalance(): number {
@@ -41,7 +41,7 @@ for example:
 
 for example:
 
-## class Employee {
+##class Employee {
   protected name: string = "Alex";
 }
 
@@ -56,7 +56,7 @@ class Manager extends Employee {
 
 for example:
 
-## class Product {
+##class Product {
   readonly productId: number;
 
   constructor(id: number) {
@@ -65,5 +65,5 @@ for example:
 }
 
 
-**Conclution**
+**Conclution**:
 Access modifiers help developers control access to class members and implement encapsulation. Use public for accessible members, private for internal details, and protected when subclasses need access. Use readonly when a property should not be reassigned. These features make TypeScript OOP code more organized and maintainable.

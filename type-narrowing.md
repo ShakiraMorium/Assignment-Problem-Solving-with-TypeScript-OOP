@@ -12,7 +12,7 @@ Blog 1:Type-Narrowing.md
   
 for example:
 
-## function formatValue(value: string | number): string {
+##function formatValue(value: string | number): string {
   if (typeof value === "string") {
     return value.trim().toLowerCase();
   }
@@ -23,7 +23,7 @@ for example:
 **The instanceof operator checks whether an object belongs to a particular class.**
 for example:
 
-## class Dog {
+##class Dog {
   bark(): string {
     return "Woof!";
   }
@@ -41,7 +41,7 @@ function getSound(animal: Dog | Date): string {
 
 for example:
 
-## type Admin = { name: string; permissions: string[] };
+##type Admin = { name: string; permissions: string[] };
 type Customer = { name: string; purchaseCount: number };
 
 function describe(user: Admin | Customer): string {
@@ -52,5 +52,5 @@ function describe(user: Admin | Customer): string {
   return `Customer: ${user.name}`;
 }
 
-**Conclusion**
+**Conclusion**:
 Type narrowing makes TypeScript code safer and easier to understand. We can use typeof for primitive values, instanceof for class instances, and in for checking object properties. These techniques help developers write reliable and maintainable applications.
