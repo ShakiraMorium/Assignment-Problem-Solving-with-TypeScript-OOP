@@ -65,5 +65,5 @@ for example:
 }
 
 
-**Conclution**:
+**Conclusion**:
 Access modifiers help developers control access to class members and implement encapsulation. Use public for accessible members, private for internal details, and protected when subclasses need access. Use readonly when a property should not be reassigned. These features make TypeScript OOP code more organized and maintainable.
